@@ -1,0 +1,38 @@
+/* Estructura Principal */
+.contenido .contenedorAdmJornadas{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.contenido .contenedorAdmJornadas table{
+    margin: 0rem;
+    padding: 0rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-collapse: separate;
+    border-spacing: 10px 5px;    
+}
+
+.contenido .contenedorAdmJornadas table tr{
+    margin: 0rem;
+    padding: 0rem;
+
+    text-align: center;
+}
+
+.contenido .contenedorAdmJornadas table tr td .campoPequenioB{
+    text-align: center;
+    padding-left: 0px;
+}
+
+.contenido .contenedorAdmJornadas table tr td #centrarCampo{
+    text-align: center;
+    padding-left: 0px;
+}

@@ -1,0 +1,50 @@
+/*Apariencia Global*/
+@import url(global.css);
+
+/*Web App Nav*/
+@import url(nav.css);
+
+/*Web App Footer*/
+@import url(footer.css);
+
+/*Calendar Nav*/
+@import url(calendarNav.css);
+
+/*Estructuras*/
+@import url(admAgregarArbitroNuevo.css);
+@import url(admAgregarEquipo.css);
+@import url(admAgregarEquipoNuevo.css);
+@import url(admAgregarJugador.css);
+@import url(admAgregarJugadorNuevo.css);
+@import url(admAgregarTecnico.css);
+@import url(admAgregarTecnicoNuevo.css);
+@import url(admAgregarTorneoNuevo.css);
+@import url(admArbitros.css);
+@import url(admDashboard.css);
+@import url(admDetalleArbitro.css);
+@import url(admDetalleEquipo.css);
+@import url(admDetalleJornada.css);
+@import url(admDetalleJugador.css);
+@import url(admDetallePartido.css);
+@import url(admDetalleTecnico.css);
+@import url(admDetalleTorneo.css);
+@import url(admEditarNominaJugadores.css);
+@import url(admEditarNominaTecnicos.css);
+@import url(admEquipos.css);
+@import url(admJornadas.css);
+@import url(admJugadores.css);
+@import url(admNominaJugadores.css);
+@import url(admNominaTecnicos.css);
+@import url(admTecnicos.css);
+@import url(admTorneos.css);
+@import url(cuartosFinal.css);
+@import url(detalleEquipo.css);
+@import url(detalleJugador.css);
+@import url(detallePartido.css);
+@import url(equipos.css);
+@import url(faseEquipos.css);
+@import url(final.css);
+@import url(index.css);
+@import url(jornadaFaseEqupos.css);
+@import url(login.css);
+@import url(semifinales.css);

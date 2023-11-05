@@ -1,0 +1,124 @@
+.header .container {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container .btn-menu{
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+    height: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .header .container .btn-menu svg {
+          display: none;
+    }
+
+    .header .container #menu-desplegable {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header .container .menu {
+        display: none;
+    }
+
+    .header .container #menu-desplegable {
+        position: fixed;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    width: 350px;
+  	    z-index: 1;
+	    background-color: var(--fondo-1);
+	    padding: 1rem;
+	    transform: translateX(-450px);
+  	    transition: transform .5s;
+	    overflow: hidden;
+    }
+
+    .header .container #menu-desplegable.visible{
+        transform: translateX(0);
+    }
+
+    .header .container #menu-desplegable ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+      
+    .header .container #menu-desplegable ul li{
+        margin-bottom: 1rem;
+    }
+
+    .header .container #menu-desplegable ul li a{
+        color: white;
+        text-decoration: none;
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 30px;
+        font-family: var(--sarabun);
+        transition: .5s;
+    }
+
+    .header .container #menu-desplegable .cerrar-menu{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        color: white;
+        font-size: 2rem;    
+        cursor: pointer;
+        position: absolute;
+        right: 3rem;
+        top: 50px;
+      }
+      
+}
+
+.header .container .menu {
+    display: flex;
+    justify-content: center;
+}
+
+.header .container .menu ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.header .container .menu ul li{
+    margin: 1rem;
+    margin-top: 0;
+}
+
+.header .container .menu ul .seleccion a{
+    color: white;
+    background-color: #ECBD19;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+
+.header .container .menu ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-family: 'Sarabun', sans-serif;
+    transition: .5s;
+}
+
+.header .container .menu ul li a:hover {
+    color: white;
+    background-color: #ECBD19;
+    transition: .5s;
+}

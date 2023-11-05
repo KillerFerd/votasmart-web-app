@@ -1,0 +1,41 @@
+/* Estructura Principal */
+.calendarNav .contenedorCalendarNav{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+}
+
+.calendarNav .contenedorCalendarNav nav{
+    margin: 0rem;
+    padding: 0.6rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.calendarNav .contenedorCalendarNav nav ul{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+}
+
+.calendarNav .contenedorCalendarNav nav ul li{
+    margin: 0rem;
+    padding: 0rem;    
+}
+
+.calendarNav .contenedorCalendarNav nav ul li a{
+    margin: 1rem;
+    padding: 0.2rem;
+    border-radius: 12px; 
+}

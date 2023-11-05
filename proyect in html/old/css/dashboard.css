@@ -1,0 +1,55 @@
+.contenedor .dashboard{
+    z-index: 1;
+    margin: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor .dashboard h1 {
+    font-family: 'Vina Sans', cursive;
+    text-align: center;
+    color: #ECBD19;
+    font-size: 100px;
+    margin-bottom: 3rem;
+}
+
+.contenedor .dashboard .card-info {
+    background-color: #8FC1B5;
+    width: 60%;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 30px;
+
+}
+
+.contenedor .dashboard .card-info .info-torneo {
+    list-style-type: none;
+    color: white;
+}
+
+.contenedor .dashboard .card-info .info-torneo li {
+    font-family: 'Sarabun', sans-serif;
+    margin: 1rem;
+}
+
+.contenedor .dashboard .botones {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.contenedor .dashboard .botones button {
+    font-family: 'Sarabun', sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    transition: .5s;
+}
+
+.contenedor .dashboard .botones button:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}

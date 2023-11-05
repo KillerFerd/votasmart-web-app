@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&family=Vina+Sans&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Catalogo de Equipos</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="navegador">
+            <nav>
+                <ul>
+                    <li><a href="formEquipos.html">Catalogo de Equipos</a></li>
+                    <li><a href="formJugadores.html">Catalogo de Jugadores</a></li>
+                    <li><a href="formArbitros.html">Catalogo de Arbitros</a></li>
+                    <li><a href="formJugadoresEquipo.html">Catalogo de Jugadores por Equipo</a></li>
+                    <li><a href="formTecnicos.html">Catalogo de Cuerpo Tecnico</a></li>
+                    <li><a href="formTorneos.html">Catalogo de Torneos</a></li>
+                    <li><a href="formJornadas.html">Catalogo de Jornadas</a></li>
+                    <li><a href="formJuegosJornada.html">Catalogo de Juegos por Jornada</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="form">
+            <h1>Catalogo de Equipos</h1>
+            <form action="#" method="POST">
+                <article>
+                    <!--Nombre del Equipo-->
+                    <label for="Nombre_e">Nombre del equipo</label>
+                    <input type="text" name="nombre_e">
+                </article>
+                <br>
+                <article>
+                    <!--Año de Fundación-->
+                    <label for="año">Año de fundación</label>
+                    <input type="number" name="año">
+                </article>
+                <br>
+                <article>
+                    <!--Titulos ganados y años en los que los obtuvieron-->
+                    <label for="titulos_g">Titulos ganados</label>
+                    <input type="number" name="titulos_g">
+                </article>
+                <br>
+                <article>
+                    <label for="Titulo">Titulo</label>
+                    <input type="text" name="Titulo">
+                </article>
+                <br>
+                <article>
+                    <label for="Año_titulo">Año en el que se obtuvo</label>
+                    <input type="text" name="Año_titulo">
+                </article>
+                <br>
+                <article>
+                    <!-- Presidente Actual del equipo-->
+                    <label for="Presidente">Presidente del equipo</label>
+                    <input type="text" name="Presidente">
+                </article>
+                <br>
+                <article>
+                    <!-- Logotipo del Equipo-->
+                    <label for="Logotipo">Logotipo del equipo</label>
+                    <input type="file" name="Logotipo" id="img_logotipo">
+                </article>
+                <br>
+                <article>
+                    <!-- Uniformes principal-->
+                    <label for="Uniforme_p">Uniforme principal</label>
+                    <input type="file" name="Uniforme_p" id="img_uniformep">
+                </article>
+                <br>
+                <article>
+                    <!-- Uniforme Secundario-->
+                    <label for="Uniforme_s">Uniforme secundario</label>
+                    <input type="text" name="Uniforme_s">
+                </article>
+                <br>
+                <article>
+                    <!-- Dirección Física de oficinas del Equipo-->
+                    <label for="direccion">Direccion Fisica de oficinas</label>
+                    <input type="text" name="direccion">
+                </article>
+                <br>
+                <article>
+                    <!-- Números de teléfono (pueden tener más de un número telefónico)-->
+                    <label for="numeros">Numero telefonicos</label>
+                    <input type="text" name="numero_t1">
+                    <input type="text" name="numero_t2">
+                </article>
+                <br>
+                <article>
+                    <!-- Dirección de Correo Electrónico-->
+                    <label for="correo_e">Dirección de Correo Electrónico</label>
+                    <input type="text" name="correo_e">
+                </article>
+                <br>
+                <article>
+                    <!-- Estadio Principal-->
+                    <label for="estadio_p">Estadio Principal</label>
+                    <input type="text" name="estadio_p">
+                </article>
+                <br>
+                <article>
+                    <!-- Historia o Información Principal del Equipo-->
+                    <label for="historia">Historia o Información Principal del Equipo</label>
+                    <input type="text" name="historia">
+                </article>
+                <br>
+                <article>
+                    <!-- Estado del Equipo -->
+                    <label for="estado">Estado del Equipo </label>
+                    <input type="text" name="estado">
+                </article>
+                <br>
+                <article>
+                    <!--fotografía oficial del Equipo -->
+                    <label for="fotografia_o">Fotografía oficial del Equipo </label>
+                    <input type="file" name="fotografia_o" id="img_fotografiao">
+                </article>
+                <br>
+                <button onclick="">Enviar</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

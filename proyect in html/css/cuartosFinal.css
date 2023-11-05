@@ -1,0 +1,9 @@
+/* Estructura Principal */
+.contenido .contenedorCuartosFinal {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 2rem;
+}

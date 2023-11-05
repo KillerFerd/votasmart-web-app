@@ -1,0 +1,133 @@
+body {
+    /*Mantener footer abajo*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+    /*Contenedor*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* --------------------------- */
+  
+  .contenido {
+    /*Mantiene footer abajo*/
+    flex: 1;
+  
+    /*Contenedor*/
+    padding: 0.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  
+  
+  .contenido .cuadro-box{
+    width:1450px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #AFC5C0;
+    text-align: center;
+  }
+  
+  .contenido .form-title{
+    justify-content: center;
+    color: #265C4C;
+    font-weight: 300;
+    font-family: 'Sarabun Bold', cursive;
+    text-align: center;
+  }
+  
+  .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+  }
+  
+  .imagen {
+    width:450px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #AFC5C0;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .texto {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contenido .form-title{
+    justify-content: center;
+    color: #265C4C;
+    font-weight: 300;
+    font-family: 'Sarabun Bold', cursive;
+    text-align: center;
+  }
+  
+  .contenido .form h1 {
+    font-family: 'Vina Sans', cursive;
+    text-align: center;
+    color: #265C4C;
+    font-size: 120px;
+    margin-bottom: 3rem;
+  }
+  
+  .contenido .form h6 {
+    font-family: 'Vina Sans', cursive;
+    text-align: center;
+    color: #265C4C;
+    font-size: 50px;
+    margin-bottom: 3rem;
+  }
+  
+  .contenido .form form article {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Sarabun', sans-serif;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .contenido .form form article label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .contenido .form form article input {
+    width: 50%;
+    margin: 0;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-family: 'Sarabun', sans-serif;
+    transition: .5s;
+  }
+  
+  .contenido .form form article input:hover {
+    color: #ECBD19;
+    transition: .5s;
+  }
+  
+  .contenido .form form button {
+    background-color: transparent;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: .5s;
+  }
+  
+  .contenido .form form button:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+  }

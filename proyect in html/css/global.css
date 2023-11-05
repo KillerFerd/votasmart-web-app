@@ -1,0 +1,390 @@
+/*Apariencia Global*/
+* {
+  margin: 0rem;  
+  padding: 0rem;
+}
+
+/* Permite que el footer se quede abajo */
+body{
+  margin: 0rem;  
+  padding: 0rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Marca el inicio del contenido */
+.header{
+  margin-bottom: 5rem;
+}
+
+/* Permite que el footer se quede abajo */
+.contenido{
+  flex: 1;
+  /*Margen del contenido de la pagina*/
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Variables */
+html {
+  /* fonts */
+  --vina: "Vina Sans", cursive;
+  --sarabun: "Sarabun", sans-serif;
+
+  /* pesos */
+  --regular: 400;
+  --bolt: 700;
+
+  /* tamaños */
+  --titulos: 120px;
+  --subtitulos: 72px;
+  --parrafos-links: 24px;
+
+  /* colores */
+  --primario: #265C4C;
+  --seleccion: #ECBD19;
+  --fondo-1: #8FC1B5;
+  --fondo-2: #AFC5C0;
+  --fondo-3: black;
+  --fondo-4: white;
+
+  /* border radius */
+  --radius: 12px;
+}
+
+/* Iconos */
+.iconoPequenio {
+  width: auto;
+  height: 25px;
+}
+
+/* Imagenes */
+.logoMono{
+  width: auto;
+  height: 150px;
+}
+
+.imagenMediana{
+  width: auto;
+  height: 160px;
+}
+
+.imagenPequenia{
+  width: auto;
+  height: 80px;
+}
+
+.imagenEPequenia{
+  width: auto;
+  height: 60px;
+}
+
+.imagenPerfil{
+  width: 150px;
+  height: 170px;
+
+  border-radius: 12px;
+}
+
+.imagenPerfilG{
+  width: 300px;
+  height: 340px;
+
+  border-radius: 12px;
+}
+
+/* Textos */
+.titulo1{
+  font-family: var(--vina);
+  font-weight: var(--regular);
+  font-size: var(--titulos);
+  color: var(--primario);
+  text-decoration: none;
+}
+
+.subtitulo1{
+  font-family: var(--sarabun);
+  font-weight: var(--bolt);
+  font-size: var(--subtitulos);
+  color: var(--primario);
+  text-decoration: none;
+}
+
+.vinculo1 {
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+  text-decoration: none;
+}
+
+.vinculo2 {
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-4);
+  text-decoration: none; 
+}
+
+.parrafo1 {
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.parrafo2 {
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-4);
+}
+
+/* Campos */
+.campoPequenioB{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  padding-left: 10px; 
+  height: 35px; 
+  width: 125px;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.campoMedianoB{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  padding-left: 10px; 
+  height: 35px; 
+  width: 250px;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.campoGrandeB{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  padding-left: 10px; 
+  height: 35px; 
+  width: 500px;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.listaPequenia{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  padding-left: 10px; 
+  height: 39px;
+  width: 139px;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.listaMediana{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  padding-left: 10px; 
+  height: 39px; 
+  width: 262px;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.textAreaB{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  padding-left: 10px; 
+  height: 105px; 
+  width: 500px;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.campoPequenioT{
+  border: none;
+  height: 35px; 
+  width: 125px;
+  background-color: transparent; 
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.campoMedianoT{
+  border: none;
+  height: 35px; 
+  width: 250px;
+  background-color: transparent; 
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.campoGrandeT{
+  border: none;
+  height: 35px; 
+  width: 500px;
+  background-color: transparent; 
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+/* Boteones */
+.botonPequenio{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  height: 35px;
+  width: 150px; 
+  background-color: var(--fondo-4); 
+  cursor: pointer;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.botonMediano{
+  border: 2px solid var(--fondo-3); 
+  border-radius: var(--radius);
+  height: 35px;
+  width: 300px; 
+  background-color: var(--fondo-4); 
+  cursor: pointer;
+
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+/* Selección */
+.vinculo1:hover {
+  color: var(--fondo-4);
+  background-color: var(--seleccion);
+  transition: 0.5s;
+}
+
+.vinculo1Estatico {
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-4);
+  text-decoration: none;
+  background-color: var(--seleccion);
+}
+
+.vinculo2:hover {
+  color: var(--seleccion);
+  transition: 0.5s;
+}
+
+.botonPequenio:hover{
+  border: 2px solid var(--fondo-4); 
+  background-color: var(--seleccion); 
+  color: var(--fondo-4);
+  transition: 0.5s;
+}
+
+.botonMediano:hover{
+  border: 2px solid var(--fondo-4); 
+  background-color: var(--seleccion); 
+  color: var(--fondo-4);
+  transition: 0.5s;
+}
+
+/* Secciones para Calendario */
+.calendarArticle1{
+  margin: 0.5rem;
+  padding: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calendarArticle1 .parrafo1Mod{
+  padding-right: 2rem;
+  
+  font-family: var(--sarabun);
+  font-weight: var(--regular);
+  font-size: var(--parrafos-links);
+  color: var(--fondo-3);
+}
+
+.calendarArticle2{
+  margin: 0rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  background-color: var(--fondo-1);
+  border-radius: 12px;
+}
+
+.calendarArticle2 ul{
+  margin: 0rem;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+
+  list-style-type: none;
+  align-items: center;
+}
+
+.calendarArticle2 ul li{
+  margin: 0rem;
+  padding: 0.2rem;
+}
+
+.calendarArticle2 ul li input{
+  text-align: center;
+}
+
+.calendarSection1{
+  margin: 0rem;
+  padding: 0rem;
+
+  align-self: center;
+}
+
+.calendarSection2{
+  margin: 0rem;
+  padding: 0rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarSection2 {
+  margin: 0.5rem;
+  padding: 0rem;
+
+  align-self: center;
+}

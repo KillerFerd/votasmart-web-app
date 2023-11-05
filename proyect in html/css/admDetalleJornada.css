@@ -1,0 +1,49 @@
+/* Estructura Principal */
+.contenido .contenedorAdmDetalleJornada {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.contenido .contenedorAdmDetalleJornada .table1{
+    margin: 0rem;
+    padding: 0rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-collapse: separate;
+    border-spacing: 20px 10px;    
+}
+
+.contenido .contenedorAdmDetalleJornada .table2{
+    margin: 0rem;
+    padding: 0rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-collapse: separate;
+    border-spacing: 10px 5px;    
+}
+
+.contenido .contenedorAdmDetalleJornada .table2 tr{
+    margin: 0rem;
+    padding: 0rem;
+
+    text-align: center;
+}
+
+.contenido .contenedorAdmDetalleJornada .table2 tr td .campoPequenioB{
+    text-align: center;
+    padding-left: 0px;
+}
+
+.contenido .contenedorAdmDetalleJornada .table2 tr td #centrarCampo{
+    text-align: center;
+    padding-left: 0px;
+}

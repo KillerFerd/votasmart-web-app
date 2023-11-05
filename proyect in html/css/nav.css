@@ -1,0 +1,55 @@
+/* Estructura Principal */
+.header .contenedorNav{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+}
+
+.header .contenedorNav label{
+    margin: 1rem;
+    padding: 0rem;
+}
+
+.header .contenedorNav nav{
+    margin: 1.2rem;
+    padding: 0rem;
+}
+
+.header .contenedorNav nav ul{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+}
+
+.header .contenedorNav nav ul li{
+    margin: 0rem;
+    padding: 0rem;    
+}
+
+.header .contenedorNav nav ul li a{
+    margin: 1rem;
+    padding: 0.2rem;
+    border-radius: 12px; 
+}
+
+.header .contenedorNav a{
+    margin: 1rem;
+    padding: 0rem;
+}
+
+.header .contenedorNav img{
+    margin: 0rem;
+    padding: 0rem;
+}
