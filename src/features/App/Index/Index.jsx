@@ -12,7 +12,7 @@ const Index = () => {
       <Tabla_posiciones></Tabla_posiciones>
       <Tabla_future_games></Tabla_future_games>
       <div className='container-sm p-2 flex flex-col'>
-      <h1 className='ml-10 font-subtitle text-lg text-left text-titulo'>¿Quienes Somos?</h1>
+      <h1 className='ml-10 mt-16 font-subtitle text-lg text-left text-titulo'>¿Quienes Somos?</h1>
         <article className='flex flex-row justify-center space-x-32 items-center'>
             <img src={Cancha} alt="cancha" className='w-1/2 h-auto rounded-base' />
             <p className='p-10 w-1/3 text-justify'>
