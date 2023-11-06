@@ -2,6 +2,10 @@ import React from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import AdminLayout from './components/AdminLayout'
 import WebAppLayout from './components/WebAppLayout'
+import Header from './components/header'
+import Footer from './components/footer'
+import Tabla_partidos from './components/tabla_partidos'
+import './App.css'
 
 // Componentes Web App
 import Index from './features/App/Index/Index'

@@ -8,7 +8,7 @@ function Header() {
       <label for="null"></label>
         <nav>
           <ul className="flex flex-row list-none text-black">
-            <li className='bg-transparent hover:bg-seleccion transition duration-300  rounded-base'>
+            <li className='bg-transparent hover:bg-seleccion transition duration-300 rounded-base'>
               <a href="index.html" className="m-1 p-4">
                 Inicio
               </a>
