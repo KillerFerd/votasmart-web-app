@@ -3,7 +3,7 @@ import Usuario from '../assets/usuario.png'
 
 const webAppHeader = () => {
   return (
-    <header className="bg-white p-4 border border-black w-full">
+    <header className="bg-white p-4 border-b-2 w-full">
       <div className="flex justify-between align-middle">
       <label for="null"></label>
         <nav>
