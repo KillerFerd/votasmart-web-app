@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Tabla_partidos = () => {
+const Tabla_future_games = () => {
     return (
       <div className="w-full px-32">
-        <h1 className='font-subtitle text-lg text-left text-titulo'>Partidos de la Jornada</h1>
+        <h1 className='font-subtitle text-lg text-left text-titulo'>Siguientes Partidos</h1>
         <table className="border-separate w-full border-spacing-2">
           <thead>
             <tr>
-              <th>Local</th>
               <th>Visitante</th>
+              <th>Local</th>
               <th>Estadio</th>
               <th>Fecha</th>
               <th>Hora</th>
@@ -42,5 +42,4 @@ const Tabla_partidos = () => {
     );
   };
   
-  export default Tabla_partidos;
-  
+  export default Tabla_future_games;

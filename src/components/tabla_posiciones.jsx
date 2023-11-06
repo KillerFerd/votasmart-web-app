@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tabla_posiciones = () => {
     return (
-      <div className="w-full p-2">
+      <div className="w-full px-32">
         <h1 className='font-subtitle text-lg text-left text-titulo'>Tabla de Posiciones</h1>
         <table className="border-separate w-full border-spacing-2">
           <thead>
