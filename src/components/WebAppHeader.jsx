@@ -26,7 +26,7 @@ const webAppHeader = () => {
           </ul>
         </nav>
         <a href="#">
-          <img src={Usuario} alt="usuario" className="w-5 h-5" />
+          <img src={Usuario} alt="usuario" className="w-10 h-10" />
         </a>
       </div>
     </header>
