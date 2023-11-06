@@ -5,20 +5,20 @@ const webAppHeader = () => {
   return (
     <header className="bg-white p-4 border-b-2 w-full">
       <div className="flex justify-between align-middle">
-      <label for="null"></label>
+      <label htmlFor="null"></label>
         <nav>
           <ul className="flex flex-row list-none text-black">
-            <li className='bg-transparent hover:bg-seleccion transition duration-300 rounded-base'>
+            <li className='bg-transparent text-base hover:bg-seleccion transition duration-300 rounded-base'>
               <a href="index.html" className="m-1 p-4">
                 Inicio
               </a>
             </li>
-            <li className='text-black hover:bg-seleccion transition duration-300 text-white rounded-base'>
+            <li className='text-black text-base hover:bg-seleccion transition duration-300 text-white rounded-base'>
               <a href="faseEquipos.html" className="text-black m-1 p-4">
                 Calendario
               </a>
             </li>
-            <li className='bg-transparent hover:bg-seleccion transition duration-300 text-white rounded-base'>
+            <li className='bg-transparent text-base hover:bg-seleccion transition duration-300 text-white rounded-base'>
               <a href="Equipos.html" className="m-1 p-4">
                 Equipos
               </a>
