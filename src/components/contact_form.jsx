@@ -49,7 +49,7 @@ const Contact_form = () => {
                         />
                     </div>
                     <div className="mb-4 flex justify-center mt-10">
-                        <button type="submit" className="bg-transparent border-2 px-4 rounded-lg hover:bg-indigo-600">
+                        <button type="submit" className="bg-transparent border-2 px-4 rounded-lg hover:bg-seleccion">
                             Enviar
                         </button>
                     </div>
