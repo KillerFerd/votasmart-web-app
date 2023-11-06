@@ -1,8 +1,12 @@
 import React from 'react'
+import CalendarNav from '../../../components/CalendarNav/CalendarNav'
 
 const Semifinal = () => {
   return (
-    <div>Semifinal</div>
+    <>
+      <CalendarNav /> 
+    </>
+    
   )
 }
 

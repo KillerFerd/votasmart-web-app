@@ -1,8 +1,11 @@
 import React from 'react'
+import CalendarNav from '../../../components/CalendarNav/CalendarNav.jsx'
 
 const Final = () => {
   return (
-    <div>Final</div>
+    <>
+      <CalendarNav></CalendarNav>
+    </>
   )
 }
 

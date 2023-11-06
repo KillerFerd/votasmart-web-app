@@ -21,7 +21,6 @@ body{
 /* Permite que el footer se quede abajo */
 .contenido{
   flex: 1;
-  /*Margen del contenido de la pagina*/
   padding-left: 3rem;
   padding-right: 3rem;
 }

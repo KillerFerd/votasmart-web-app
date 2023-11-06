@@ -7,7 +7,7 @@ import twitter from '../assets/twitter.png'
 const webAppFooter = () => {
   return (
     <footer className="footer">
-        <div className="min-h-screen flex flex-col">
+        <div className="flex flex-col">
             <section className="mt-auto p-8 flex flex-row justify-between items-center bg-titulo">
                 <nav className="pl-8">
                     <ul className="list-none text-justify text-hover">

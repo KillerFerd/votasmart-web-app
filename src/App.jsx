@@ -17,6 +17,7 @@ import DetallePartido from './features/App/DetalleEquipo/DetalleEquipo'
 import Equipos from './features/App/Equipos/Equipos'
 import DetalleEquipo from './features/App/DetalleEquipo/DetalleEquipo'
 import DetalleJugador from './features/App/DetalleJugador/DetalleJugador'
+import Jornada from './features/App/Jornada/Jornada'
 
 // Componentes Administración
 import Login from './features/Admin/Login/Login'
@@ -66,6 +67,8 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path='final' element={<Final />}>
         </Route>
         <Route path='detalle-partido' element={<DetallePartido />}>
+        </Route>
+        <Route path='jornada' element={<Jornada />}>
         </Route>
       </Route>
 

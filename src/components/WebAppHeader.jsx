@@ -5,7 +5,7 @@ const webAppHeader = () => {
   return (
     <header className="bg-white p-4 border-b-2 w-full">
       <div className="flex justify-between align-middle">
-      <label for="null"></label>
+      <span></span>
         <nav>
           <ul className="flex flex-row list-none text-black">
             <li className='bg-transparent hover:bg-seleccion transition duration-300 rounded-base'>

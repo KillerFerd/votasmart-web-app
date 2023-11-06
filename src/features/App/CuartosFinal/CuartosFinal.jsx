@@ -1,8 +1,11 @@
 import React from 'react'
+import CalendarNav from '../../../components/CalendarNav/CalendarNav'
 
 const CuartosFinal = () => {
   return (
-    <div>CuartosFinal</div>
+    <>
+      <CalendarNav />
+    </>
   )
 }
 

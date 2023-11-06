@@ -1,18 +1,17 @@
 import React from 'react'
-import {Outlet} from 'react-router-dom';
-import WebAppHeader from './WebAppHeader';
+import { Outlet } from 'react-router-dom';
+import WebAppHeader from './WebAppHeader/WebAppHeader';
 import WebAppFooter from './WebAppFooter';
 
 const webAppLayout = () => {
   return (
     <>
-        <WebAppHeader/>
-        <main>
-            <div>
-                <Outlet/>
-            </div>
-        </main>
-        <WebAppFooter/>
+      <WebAppHeader />
+
+      <div className='mainContainer'>
+        <Outlet />
+      </div>
+      <WebAppFooter />
     </>
   )
 }
