@@ -17,7 +17,7 @@ const WebAppHeader = () => {
             <Link to="/app/inicio">
               <LinkText selected={location.pathname === '/app/inicio'}
                 linkTextType={'black'}>
-                <p>Inicio</p>
+                Inicio
               </LinkText>
             </Link>
           </Styles.Li>
@@ -31,7 +31,7 @@ const WebAppHeader = () => {
                 location.pathname === '/app/calendario/jornada' ||
                 location.pathname === '/app/calendario/detalle-partido'  }
                 linkTextType={'black'}>
-                <p>Calendario</p>
+                Calendario
               </LinkText>
             </Link>
           </Styles.Li>
@@ -42,7 +42,7 @@ const WebAppHeader = () => {
                 location.pathname === '/app/equipos/detalle-equipo' ||
                 location.pathname === '/app/equipos/detalle-jugador'}
                 linkTextType={'black'}>
-                <p>Equipos</p>
+                Equipos
               </LinkText>
             </Link>
           </Styles.Li>
