@@ -29,7 +29,7 @@ const WebAppHeader = () => {
                 location.pathname === '/app/calendario/semifinal' ||
                 location.pathname === '/app/calendario/final' ||
                 location.pathname === '/app/calendario/jornada' ||
-                location.pathname === '/app/calendario/detalle-partido'  }
+                location.pathname === '/app/calendario/detalle-partido'}
                 linkTextType={'black'}>
                 Calendario
               </LinkText>
@@ -50,7 +50,7 @@ const WebAppHeader = () => {
       </Styles.Nav>
       <Link to="/admin/login">
         <Styles.Img>
-          <Image imageType={'xxsImage'} alt="usuario" src={Usuario} ></Image>
+          <Image imageType={'xxsImage'} alt="usuario" src={Usuario} />
         </Styles.Img>
       </Link>
     </Styles.ContenedorNav>

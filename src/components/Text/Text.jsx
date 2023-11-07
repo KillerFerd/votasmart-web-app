@@ -2,35 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as styles from './Styles';
 
-const textTypes = [
-  {
-    textType: 'title',
-    component: styles.Title,
-  },
-  {
-    textType: 'subTitle',
-    component: styles.SubTitle,
-  },
-  {
-    textType: 'paragraph1',
-    component: styles.Paragraph1,
-  },
-  {
-    textType: 'paragraph2',
-    component: styles.Paragraph2,
-  }
-];
+const textTypes = {
+  title: styles.Title,
+  subTitle: styles.SubTitle,
+  paragraph1: styles.Paragraph1,
+  paragraph2: styles.Paragraph2
+};
 
 const Text = ({ textType, ...props }) => {
-  const selectedTextType = textTypes.find((type) => type.textType === textType);
+  const StyledText = textTypes[textType];
 
-  if (!selectedTextType) {
+  if (!StyledText) {
     return null; // Maneja otros valores de tipo si es necesario
   }
 
-  const StyledText = selectedTextType.component;
-
-  return <StyledText textType={textType} {...props}></StyledText>;
+  return <StyledText {...props} />;
 };
 
 Text.propTypes = {

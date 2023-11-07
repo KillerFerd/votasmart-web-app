@@ -2,47 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as styles from './Styles';
 
-const imageTypes = [
-  {
-    imageType: 'xxsImage',
-    component: styles.XxsImage,
-  },
-  {
-    imageType: 'xsImage',
-    component: styles.XsImage,
-  },
-  {
-    imageType: 'sImage',
-    component: styles.SImage,
-  },
-  {
-    imageType: 'mImage',
-    component: styles.MImage,
-  },
-  {
-    imageType: 'mLogo',
-    component: styles.MLogo,
-  },
-  {
-    imageType: 'mProfile',
-    component: styles.MProfile,
-  },
-  {
-    imageType: 'lProfile',
-    component: styles.LProfile,
-  } 
-];
+const imageTypes = {
+  xxsImage: styles.XxsImage,
+  xsImage: styles.XsImage,
+  sImage: styles.SImage,
+  mImage: styles.MImage,
+  mLogo: styles.MLogo,
+  mProfile: styles.MProfile,
+  lProfile: styles.LProfile
+};
 
 const Image = ({ imageType, ...props }) => {
-  const selectedImageType = imageTypes.find((type) => type.imageType === imageType);
+  const StyledImage = imageTypes[imageType];
 
-  if (!selectedImageType) {
+  if (!StyledImage) {
     return null; // Maneja otros valores de tipo si es necesario
   }
 
-  const StyledImage = selectedImageType.component;
-
-  return <StyledImage imageType={imageType} {...props}></StyledImage>;
+  return <StyledImage {...props} />;
 };
 
 Image.propTypes = {
