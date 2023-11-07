@@ -1,7 +1,8 @@
 import React from 'react'
 import CalendarNav from '../../../components/CalendarNav/CalendarNav'
+import Container from '../../../components/Container/Container'
 import Text from '../../../components/Text/Text'
-import * as Styles from './styles'
+import * as Styles from './Styles'
 import { Link } from 'react-router-dom';
 import LinkText from '../../../components/LinkText/LinkText';
 
@@ -9,7 +10,7 @@ const FaseEquipos = () => {
   return (
     <>
       <CalendarNav />
-      <Styles.Container>
+      <Container>
         <Styles.Title>
           <Text textType={'title'}>FASE DE EQUIPOS</Text>
         </Styles.Title>
@@ -17,14 +18,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
             <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 1
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 12
                 </LinkText>
               </Link>
@@ -33,14 +34,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 2
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 13
                 </LinkText>
               </Link>
@@ -49,14 +50,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 3
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 14
                 </LinkText>
               </Link>
@@ -65,14 +66,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 4
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 15
                 </LinkText>
               </Link>
@@ -81,14 +82,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 5
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 16
                 </LinkText>
               </Link>
@@ -97,14 +98,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 6
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 17
                 </LinkText>
               </Link>
@@ -113,14 +114,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 7
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 18
                 </LinkText>
               </Link>
@@ -129,14 +130,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 8
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 19
                 </LinkText>
               </Link>
@@ -145,14 +146,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 9
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 20
                 </LinkText>
               </Link>
@@ -161,14 +162,14 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 10
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 21
                 </LinkText>
               </Link>
@@ -177,21 +178,21 @@ const FaseEquipos = () => {
           <Styles.Tr>
           <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 11
                 </LinkText>
               </Link>
               </Styles.Td>
               <Styles.Td>
               <Link to="/app/calendario/jornada">
-                <LinkText vinculoType={'black'}>
+                <LinkText linkTextType={'black'}>
                   Jornada 22
                 </LinkText>
               </Link>
               </Styles.Td>
           </Styles.Tr>
         </Styles.Table>
-      </Styles.Container>
+      </Container>
     </>
   )
 }

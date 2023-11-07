@@ -9,9 +9,9 @@ export const Container = styled.div`
   align-items: center;
 
   width: 100%;
-  background-color: transparent;
   position: fixed;
   overflow: hidden;
+  padding-right: 10rem;
 `;
 
 export const Nav = styled.nav`
@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   padding: 0.6rem;
   background-color: white;
 
-  padding-right: 10rem;
+  border-radius: 12px;
 `;
 
 export const Ul = styled.ul`

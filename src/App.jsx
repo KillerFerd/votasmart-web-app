@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, useLocation } from 'react-router-dom';
 import AdminLayout from './components/AdminLayout'
 import WebAppLayout from './components/WebAppLayout'
 /* import Header from './components/header'
@@ -141,10 +141,28 @@ const router = createBrowserRouter(createRoutesFromElements(
   </Route>
 ))
 
-const App = () => {
-  return (
-    <RouterProvider router={router} />
-  )
+function ScrollToTop() {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return null;
 }
 
-export default App
+function ScrollToTopWrapper() {
+  return (
+    <RouterProvider router={router}>
+      <ScrollToTop />
+    </RouterProvider>
+  );
+}
+
+const App = () => {
+  return (
+    <ScrollToTopWrapper />
+  );
+}
+
+export default App;

@@ -13,7 +13,7 @@ const linkTextTypes = [
   },
 ];
 
-const LinkText = ({ vinculoType: linkTextType, selected, children, ...props }) => {
+const LinkText = ({ linkTextType: linkTextType, selected, children, ...props }) => {
   const selectedLinkTextType = linkTextTypes.find((type) => type.type === linkTextType);
 
   if (!selectedLinkTextType) {

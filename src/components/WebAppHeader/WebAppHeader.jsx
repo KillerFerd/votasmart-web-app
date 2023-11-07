@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Styles from './Styles';
-import Vinculo from '../LinkText/LinkText';
+import LinkText from '../LinkText/LinkText';
 import Image from '../Image/Image';
 import Usuario from '../../assets/usuario.png'
 import { Link, useLocation } from 'react-router-dom';
@@ -15,34 +15,35 @@ const WebAppHeader = () => {
         <Styles.Ul>
           <Styles.Li>
             <Link to="/app/inicio">
-              <Vinculo selected={location.pathname === '/app/inicio'}
-                vinculoType={'black'}>
+              <LinkText selected={location.pathname === '/app/inicio'}
+                linkTextType={'black'}>
                 <p>Inicio</p>
-              </Vinculo>
+              </LinkText>
             </Link>
           </Styles.Li>
           <Styles.Li>
             <Link to="/app/calendario/fase-equipos">
-              <Vinculo selected={
+              <LinkText selected={
                 location.pathname === '/app/calendario/fase-equipos' ||
                 location.pathname === '/app/calendario/cuartos-final' ||
                 location.pathname === '/app/calendario/semifinal' ||
                 location.pathname === '/app/calendario/final' ||
-                location.pathname === '/app/calendario/jornada' }
-                vinculoType={'black'}>
+                location.pathname === '/app/calendario/jornada' ||
+                location.pathname === '/app/calendario/detalle-partido'  }
+                linkTextType={'black'}>
                 <p>Calendario</p>
-              </Vinculo>
+              </LinkText>
             </Link>
           </Styles.Li>
           <Styles.Li>
             <Link to="/app/equipos">
-              <Vinculo selected={
+              <LinkText selected={
                 location.pathname === '/app/equipos' ||
                 location.pathname === '/app/equipos/detalle-equipo' ||
                 location.pathname === '/app/equipos/detalle-jugador'}
-                vinculoType={'black'}>
+                linkTextType={'black'}>
                 <p>Equipos</p>
-              </Vinculo>
+              </LinkText>
             </Link>
           </Styles.Li>
         </Styles.Ul>
