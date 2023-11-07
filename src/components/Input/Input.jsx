@@ -13,7 +13,7 @@ const inputTypes = [
   },
 ];
 
-const Input = ({ inputType, selected, children, size, center, ...props }) => {
+const Input = ({ inputType, size, center, ...props }) => {
   const selectedInputType = inputTypes.find((type) => type.type === inputType);
 
   if (!selectedInputType) {
@@ -22,7 +22,16 @@ const Input = ({ inputType, selected, children, size, center, ...props }) => {
 
   const StyledInput = selectedInputType.component;
 
-  return <StyledInput selected={selected} size={size} center={center} {...props}></StyledInput>;
+  const inputProps = {
+    size,
+    ...props,
+  };
+
+  if (center) {
+    inputProps.style = { textAlign: 'center' };
+  }
+
+  return <StyledInput {...inputProps}></StyledInput>;
 };
 
 Input.propTypes = {
