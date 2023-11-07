@@ -1,6 +1,6 @@
 import React from 'react'
 import CalendarNav from '../../../components/CalendarNav/CalendarNav'
-import Container from '../../../components/Container/Container'
+import ContainerWithSubNav from '../../../components/ContainerWithSubNav/ContainerWithSubNav'
 import Text from '../../../components/Text/Text'
 import * as Styles from './Styles'
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ const FaseEquipos = () => {
   return (
     <>
       <CalendarNav />
-      <Container>
+      <ContainerWithSubNav>
         <Styles.Title>
           <Text textType={'title'}>FASE DE EQUIPOS</Text>
         </Styles.Title>
@@ -194,7 +194,7 @@ const FaseEquipos = () => {
             </Styles.Tr>
           </tbody>
         </Styles.Table>
-      </Container>
+      </ContainerWithSubNav>
     </>
   )
 }

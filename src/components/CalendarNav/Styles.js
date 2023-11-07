@@ -12,6 +12,7 @@ export const Container = styled.div`
   position: fixed;
   overflow: hidden;
   padding-right: 6rem;
+  padding-bottom: 4rem;
 `;
 
 export const Nav = styled.nav`

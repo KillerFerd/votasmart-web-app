@@ -1,10 +1,7 @@
 import React from 'react'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, useLocation } from 'react-router-dom';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import AdminLayout from './components/AdminLayout'
 import WebAppLayout from './components/WebAppLayout'
-/* import Header from './components/header'
-import Footer from './components/footer'
-import Tabla_partidos from './components/tabla_partidos' */
 import './App.css'
 
 // Componentes Web App
@@ -13,7 +10,7 @@ import FaseEquipos from './features/App/FaseEquipos/FaseEquipos'
 import CuartosFinal from './features/App/CuartosFinal/CuartosFinal'
 import Semifinal from './features/App/Semifinal/Semifinal'
 import Final from './features/App/Final/Final'
-import DetallePartido from './features/App/DetalleEquipo/DetalleEquipo'
+import DetallePartido from './features/App/DetallePartido/DetallePartido'
 import Equipos from './features/App/Equipos/Equipos'
 import DetalleEquipo from './features/App/DetalleEquipo/DetalleEquipo'
 import DetalleJugador from './features/App/DetalleJugador/DetalleJugador'
@@ -141,28 +138,11 @@ const router = createBrowserRouter(createRoutesFromElements(
   </Route>
 ))
 
-function ScrollToTop() {
-  const location = useLocation();
+function App() {
 
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
-  return null;
-}
-
-function ScrollToTopWrapper() {
   return (
-    <RouterProvider router={router}>
-      <ScrollToTop />
-    </RouterProvider>
-  );
-}
-
-const App = () => {
-  return (
-    <ScrollToTopWrapper />
-  );
+    <RouterProvider router={router} />
+  )
 }
 
 export default App;
