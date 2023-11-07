@@ -1,4 +1,5 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 import CalendarNav from '../../../components/CalendarNav/CalendarNav'
 import Container from '../../../components/Container/Container'
 import Text from '../../../components/Text/Text'
@@ -6,12 +7,15 @@ import VsTarjet from '../../../components/VsTarjet/VsTarjet'
 import * as Styles from './Styles'
 
 const Jornada = () => {
+
+  const { jornadaNumber } = useParams();
+
   return (
     <>
       <CalendarNav />
       <Container>
         <Styles.Title>
-          <Text textType={'title'}>JORNADA #</Text>
+          <Text textType={'title'}>JORNADA {jornadaNumber}</Text>
         </Styles.Title>
           <VsTarjet partido={'Partido 1'}/>
           <VsTarjet partido={'Partido 2'}/>

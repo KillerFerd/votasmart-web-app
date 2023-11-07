@@ -68,7 +68,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         </Route>
         <Route path='detalle-partido' element={<DetallePartido />}>
         </Route>
-        <Route path='jornada' element={<Jornada />}>
+        <Route path='jornada/:jornadaNumber' element={<Jornada />}>
         </Route>
       </Route>
 
