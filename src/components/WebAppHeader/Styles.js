@@ -23,6 +23,7 @@ export const Null = styled.span`
 export const Nav = styled.nav`
   margin: 1.2rem;
   padding: 0rem;
+  padding-left: 3rem;
 `;
 
 export const Ul = styled.ul`

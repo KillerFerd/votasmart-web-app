@@ -8,7 +8,7 @@ import Info from '../../assets/info.png'
 import Input from '../Input/Input';
 import { Link } from 'react-router-dom';
 
-const VsTarjet = ({partido}) => {
+const VsTarjet = ({ partido }) => {
 
     return (
         <>

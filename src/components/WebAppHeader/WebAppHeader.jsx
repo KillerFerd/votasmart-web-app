@@ -2,11 +2,13 @@ import React from 'react';
 import * as Styles from './Styles';
 import LinkText from '../LinkText/LinkText';
 import Image from '../Image/Image';
-import Usuario from '../../assets/usuario.png'
+import Usuario from '../../assets/usuario.png';
 import { Link, useLocation } from 'react-router-dom';
 
 const WebAppHeader = () => {
   const location = useLocation();
+
+  const isRouteActive = (routePart) => location.pathname.includes(routePart);
 
   return (
     <Styles.ContenedorNav>
@@ -15,33 +17,38 @@ const WebAppHeader = () => {
         <Styles.Ul>
           <Styles.Li>
             <Link to="/app/inicio">
-              <LinkText selected={location.pathname === '/app/inicio'}
-                linkTextType={'black'}>
+              <LinkText selected={isRouteActive('/app/inicio')} linkTextType={'black'}>
                 Inicio
               </LinkText>
             </Link>
           </Styles.Li>
           <Styles.Li>
             <Link to="/app/calendario/fase-equipos">
-              <LinkText selected={
-                location.pathname === '/app/calendario/fase-equipos' ||
-                location.pathname === '/app/calendario/cuartos-final' ||
-                location.pathname === '/app/calendario/semifinal' ||
-                location.pathname === '/app/calendario/final' ||
-                location.pathname === '/app/calendario/jornada' ||
-                location.pathname === '/app/calendario/detalle-partido'}
-                linkTextType={'black'}>
+              <LinkText
+                selected={
+                  isRouteActive('/app/calendario/fase-equipos') ||
+                  isRouteActive('/app/calendario/cuartos-final') ||
+                  isRouteActive('/app/calendario/semifinal') ||
+                  isRouteActive('/app/calendario/final') ||
+                  isRouteActive('/app/calendario/jornada') ||
+                  isRouteActive('/app/calendario/detalle-partido')
+                }
+                linkTextType={'black'}
+              >
                 Calendario
               </LinkText>
             </Link>
           </Styles.Li>
           <Styles.Li>
             <Link to="/app/equipos">
-              <LinkText selected={
-                location.pathname === '/app/equipos' ||
-                location.pathname === '/app/equipos/detalle-equipo' ||
-                location.pathname === '/app/equipos/detalle-jugador'}
-                linkTextType={'black'}>
+              <LinkText
+                selected={
+                  isRouteActive('/app/equipos') ||
+                  isRouteActive('/app/equipos/detalle-equipo') ||
+                  isRouteActive('/app/equipos/detalle-jugador')
+                }
+                linkTextType={'black'}
+              >
                 Equipos
               </LinkText>
             </Link>
@@ -54,7 +61,6 @@ const WebAppHeader = () => {
         </Styles.Img>
       </Link>
     </Styles.ContenedorNav>
-
   );
 };
 

@@ -7,6 +7,8 @@ const CalendarNav = () => {
 
   const location = useLocation();
 
+  const isRouteActive = (routePart) => location.pathname.includes(routePart);
+
   return (
     <>
       <Styles.Container>
@@ -14,28 +16,30 @@ const CalendarNav = () => {
           <Styles.Ul>
             <Styles.Li>
               <Link to="/app/calendario/fase-equipos">
-                <LinkText selected={location.pathname === '/app/calendario/fase-equipos' || location.pathname === '/app/calendario/jornada'} linkTextType={'black'}>
+                <LinkText selected={isRouteActive('/app/calendario/fase-equipos') ||
+                  isRouteActive('/app/calendario/jornada')}
+                  linkTextType={'black'}>
                   Fase de Equipos
                 </LinkText>
               </Link>
             </Styles.Li>
             <Styles.Li>
               <Link to="/app/calendario/cuartos-final">
-                <LinkText selected={location.pathname === '/app/calendario/cuartos-final'} linkTextType={'black'}>
+                <LinkText selected={isRouteActive('/app/calendario/cuartos-final')} linkTextType={'black'}>
                   Cuartos de Final
                 </LinkText>
               </Link>
             </Styles.Li>
             <Styles.Li>
               <Link to="/app/calendario/semifinal">
-                <LinkText selected={location.pathname === '/app/calendario/semifinal'} linkTextType={'black'}>
+                <LinkText selected={isRouteActive('/app/calendario/semifinal')} linkTextType={'black'}>
                   Semifinal
                 </LinkText>
               </Link>
             </Styles.Li>
             <Styles.Li>
               <Link to="/app/calendario/final">
-                <LinkText selected={location.pathname === '/app/calendario/final'} linkTextType={'black'}>
+                <LinkText selected={isRouteActive('/app/calendario/final')} linkTextType={'black'}>
                   Final
                 </LinkText>
               </Link>
