@@ -46,97 +46,92 @@ import DetalleJornada from './features/Admin/DetalleJornada/DetalleJornada'
 import AdmDetallePartido from './features/Admin/DetallePartido/DetallePartido'
 
 const router = createBrowserRouter(createRoutesFromElements(
-  // Ruta padre
   <Route path='/'>
-    {/* Rutas Web App */}
-    <Route path='app' element={<WebAppLayout />}>
 
-      <Route path='inicio' element={<Index />}>
-      </Route>
+    <Route path='app' element={<WebAppLayout />}>
+      <Route path='inicio' element={<Index />} />
 
       <Route path='calendario'>
-        <Route path='fase-equipos' element={<FaseEquipos />}>
-        </Route>
-        <Route path='cuartos-final' element={<CuartosFinal />}>
-        </Route>
-        <Route path='semifinal' element={<Semifinal />}>
-        </Route>
-        <Route path='final' element={<Final />}>
-        </Route>
-        <Route path='detalle-partido' element={<DetallePartido />}>
-        </Route>
-        <Route path='jornada/:jornadaNumber' element={<Jornada />}>
-        </Route>
+        <Route path='fase-equipos' element={<FaseEquipos />} />
+        <Route path='cuartos-final' element={<CuartosFinal />} />
+        <Route path='semifinal' element={<Semifinal />} />
+        <Route path='final' element={<Final />} />
+        <Route path='detalle-partido' element={<DetallePartido />} />
+        <Route path='jornada/:jornadaNumber' element={<Jornada />} />
       </Route>
 
-      <Route path='equipos' element={<Equipos />}>
-        <Route path='detalle-equipo' element={<DetalleEquipo />}>
-          <Route path='detalle-jugador' element={<DetalleJugador />}>
-          </Route>
+      <Route path="equipos">
+        <Route index element={<Equipos />} />
+        <Route path="detalle-equipo">
+          <Route index element={<DetalleEquipo />} />
+          <Route path="detalle-jugador" element={<DetalleJugador />} />
         </Route>
       </Route>
 
     </Route>
 
-    {/* Rutas Administración */}
     <Route path='admin' element={<AdminLayout />}>
-      <Route path='login' element={<Login />}>
-      </Route>
-      <Route path='dashboard' element={<Dashboard />}>
-      </Route>
-      <Route path='torneos' element={<Torneos />}>
-        <Route path='agregar-torneo-nuevo' element={<AgregarTorneoNuevo />}>
-        </Route>
-        <Route path='detalle-torneo' element={<DetalleTorneo />}>
-          <Route path='agregar-equipo' element={<AgregarEquipo />}>
-          </Route>
-          <Route path='nomina-jugadores' element={<NominaJugadores />}>
-            <Route path='editar-nomina-jugadores' element={<EditarNominaJugadores />}>
-              <Route path='agregar-jugador' element={<AgregarJugador />}>
-              </Route>
+      <Route path='login' element={<Login />} />
+      <Route path='dashboard' element={<Dashboard />} />
+
+      <Route path='torneos'>
+        <Route index element={<Torneos />} />
+        <Route path='agregar-torneo-nuevo' element={<AgregarTorneoNuevo />} />
+        <Route path='detalle-torneo'>
+          <Route index element={<DetalleTorneo />} />
+          <Route path='agregar-equipo' element={<AgregarEquipo />} />
+          <Route path='nomina-jugadores'>
+            <Route index element={<NominaJugadores />} />
+            <Route path='editar-nomina-jugadores'>
+              <Route index element={<EditarNominaJugadores />} />
+              <Route path='agregar-jugador' element={<AgregarJugador />} />
             </Route>
           </Route>
-          <Route path='nomina-tecnicos' element={<NominaTecnicos />}>
-            <Route path='editar-nomina-tecnicos' element={<EditarNominaTecnicos />}>
-              <Route path='agregar-tecnico' element={<AgregarTecnico />}>
-              </Route>
+          <Route path='nomina-tecnicos'>
+            <Route index element={<NominaTecnicos />} />
+            <Route path='editar-nomina-tecnicos'>
+              <Route index element={<EditarNominaTecnicos />} />
+              <Route path='agregar-tecnico' element={<AgregarTecnico />} />
             </Route>
           </Route>
         </Route>
       </Route>
-      <Route path='equipos' element={<AdmEquipos />}>
-        <Route path='agregar-equipo-nuevo' element={<AgregarEquipoNuevo />}>
-        </Route>
-        <Route path='detalle-equipo' element={<AdmDetalleEquipo />}>
+
+      <Route path='equipos'>
+        <Route index element={<AdmEquipos />} />
+        <Route path='agregar-equipo-nuevo' element={<AgregarEquipoNuevo />} />
+        <Route path='detalle-equipo' element={<AdmDetalleEquipo />} />
+      </Route>
+
+      <Route path='jugadores'>
+        <Route index element={<Jugadores />} />
+        <Route path='agregar-jugador-nuevo' element={<AgregarJugadorNuevo />} />
+        <Route path='detalle-jugador' element={<AdmDetalleJugador />} />
+      </Route>
+
+      <Route path='tecnicos'>
+        <Route index element={<Tecnicos />} />
+        <Route path='agregar-tecnico-nuevo' element={<AgregarTecnicoNuevo />} />
+        <Route path='detalle-tecnico' element={<DetalleTecnico />} />
+      </Route>
+
+      <Route path='arbitros'>
+        <Route index element={<Arbitros />} />
+        <Route path='agregar-arbitro-nuevo' element={<AgregarArbitroNuevo />} />
+        <Route path='detalle-arbitro' element={<DetalleArbitro />} />
+      </Route>
+
+      <Route path='jornadas'>
+        <Route index element={<Jornadas />} />
+        <Route path='detalle-jornada'>
+          <Route index element={<DetalleJornada />} />
+          <Route path='detalle-partido' element={<AdmDetallePartido />} />
         </Route>
       </Route>
-      <Route path='jugadores' element={<Jugadores />}>
-        <Route path='agregar-jugador-nuevo' element={<AgregarJugadorNuevo />}>
-        </Route>
-        <Route path='detalle-jugador' element={<AdmDetalleJugador />}>
-        </Route>
-      </Route>
-      <Route path='tecnicos' element={<Tecnicos />}>
-        <Route path='agregar-tecnico-nuevo' element={<AgregarTecnicoNuevo />}>
-        </Route>
-        <Route path='detalle-tecnico' element={<DetalleTecnico />}>
-        </Route>
-      </Route>
-      <Route path='arbitros' element={<Arbitros />}>
-        <Route path='agregar-arbitro-nuevo' element={<AgregarArbitroNuevo />}>
-        </Route>
-        <Route path='detalle-arbitro' element={<DetalleArbitro />}>
-        </Route>
-      </Route>
-      <Route path='jornadas' element={<Jornadas />}>
-        <Route path='detalle-jornada' element={<DetalleJornada />}>
-          <Route path='detalle-partido' element={<AdmDetallePartido />}>
-          </Route>
-        </Route>
-      </Route>
+
     </Route>
   </Route>
-))
+));
 
 function App() {
 
