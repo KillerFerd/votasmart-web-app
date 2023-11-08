@@ -18,6 +18,13 @@ export const SImage = styled.img`
 export const MImage = styled.img`
   width: auto;
   height: 160px;
+  border-radius: 12px;
+`;
+
+export const LImage = styled.img`
+  width: auto;
+  height: 320px;
+  border-radius: 12px;
 `;
 
 export const MLogo = styled.img`

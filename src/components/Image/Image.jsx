@@ -7,6 +7,7 @@ const imageTypes = {
   xsImage: styles.XsImage,
   sImage: styles.SImage,
   mImage: styles.MImage,
+  lImage: styles.LImage,
   mLogo: styles.MLogo,
   mProfile: styles.MProfile,
   lProfile: styles.LProfile
@@ -23,7 +24,7 @@ const Image = ({ imageType, ...props }) => {
 };
 
 Image.propTypes = {
-  imageType: PropTypes.oneOf(['xxsImage', 'xsImage', 'sImage', 'mImage', 'mLogo', 'mProfile', 'lProfile']).isRequired
+  imageType: PropTypes.oneOf(['xxsImage', 'xsImage', 'sImage', 'mImage', 'lImage', 'mLogo', 'mProfile', 'lProfile']).isRequired
 };
 
 export default Image;
