@@ -8,12 +8,5 @@ export const Table = styled.table`
   padding-bottom: 2rem;
 
   border-collapse: separate;
-  border-spacing: 10px 5px;
-
-  tr {
-    margin: 0rem;
-    padding: 0rem;
-
-    text-align: center;
-  }
+  border-spacing: 20px 10px;
 `;

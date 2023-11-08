@@ -1,6 +1,5 @@
 import React from 'react'
 import ContainerAdm from '../../../components/ContainerAdm/ContainerAdm'
-import * as Styles from './Styles'
 import Text from '../../../components/Text/Text'
 import TableAdm from '../../../components/TableAdm/TableAdm'
 import Input from '../../../components/Input/Input'
@@ -15,7 +14,7 @@ const Jornadas = () => {
         <Text textType={'title'}>JORNADAS</Text>
         <TableAdm>
           <thead>
-            <Styles.Tr>
+            <tr>
               <td>
                 <Text textType={'paragraph1'}>No.</Text>
               </td>
@@ -34,10 +33,10 @@ const Jornadas = () => {
               <td>
                 <Text textType={'paragraph1'}></Text>
               </td>
-            </Styles.Tr>
+            </tr>
           </thead>
           <tbody>
-            <Styles.Tr>
+            <tr>
               <td>
                 <Input
                   inputType={'inputBorder'}
@@ -86,7 +85,7 @@ const Jornadas = () => {
                   <Image imageType={'xxsImage'} src={Info} alt='información'></Image>
                 </Link>
               </td>
-            </Styles.Tr>
+            </tr>
           </tbody>
         </TableAdm>
       </ContainerAdm>

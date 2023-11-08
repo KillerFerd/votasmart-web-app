@@ -36,7 +36,7 @@ const Input = ({ inputType, size, center, ...props }) => {
 
 Input.propTypes = {
   inputType: PropTypes.oneOf(['inputBorder', 'inputTrans']).isRequired,
-  size: PropTypes.oneOf(['large', 'medium', 'small']).isRequired,
+  size: PropTypes.oneOf(['large', 'medium', 'small', 'xsmall']).isRequired,
   center: PropTypes.bool,
 };
 

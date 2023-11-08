@@ -19,7 +19,7 @@ const getCenterAlignment = (center) => {
   return center ? "center" : "left";
 };
 
-export const InputBorder = styled.input`
+export const StyledList = styled.select`
   border: 2px solid black;
   border-radius: 12px;
   padding-left: 10px;
@@ -32,14 +32,4 @@ export const InputBorder = styled.input`
   text-align: ${(props) => getCenterAlignment(props.center)};
 `;
 
-export const InputTrans = styled.input`
-  border: none;
-  height: 45px;
-  width: ${(props) => getSizeWidth(props.size)};
-  background-color: transparent;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: black;
-  text-align: ${(props) => getCenterAlignment(props.center)};
-`;
+export const List = StyledList;
