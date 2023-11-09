@@ -24,7 +24,11 @@ export const Button = styled.button`
       : "transform 0.5s ease-in-out, opacity 1s ease-in-out"};
   transform: ${(props) =>
     props.$isVisible ? "translateX(0)" : "translateX(-200%)"};
-  opacity: ${(props) => (props.$isVisible ? "1" : "0")};
+
+  &:hover {
+    color: #ecbd19;
+    transition: 0.5s;
+  }
 `;
 
 export const LeftNavBar = styled.div`

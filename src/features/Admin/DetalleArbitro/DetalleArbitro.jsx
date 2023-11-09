@@ -49,7 +49,7 @@ const DetalleArbitro = () => {
               </tr>
               <tr>
                 <td><Text textType={'paragraph1'}>Puesto:</Text></td>
-                <td><Input inputType={'inputTrans'} size={'Medium'} disabled type='text'></Input></td>
+                <td><Input inputType={'inputTrans'} size={'medium'} disabled type='text'></Input></td>
               </tr>    
               <tr>
                 <td><Text textType={'paragraph1'}>Altura:</Text></td>
