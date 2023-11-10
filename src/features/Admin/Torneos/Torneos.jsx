@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import info from '../../../assets/info.png';
 import VotaSmartApi from '../../../apis/VotaSmartApi';
 import { toast } from 'react-toastify';
+import Alert from '../../../components/Alert/Alert'
 
 const Torneos = () => {
   const [torneos, setTorneos] = useState([]);
   const [solicitudExitosaShown, setSolicitudExitosaShown] = useState(false);
+  const [error, setError] = useState(null);
 
   // ComponentDidMount
   useEffect(() => {
-    let isMounted = true; 
+    let isMounted = true;
 
     VotaSmartApi.get('/torneo')
       .then((response) => {
@@ -18,15 +20,16 @@ const Torneos = () => {
           setTorneos(response.data.data || []);
           if (!solicitudExitosaShown) {
             // toast.success('Solicitud exitosa');
-            setSolicitudExitosaShown(true); 
+            setSolicitudExitosaShown(true);
           }
         }
       })
       .catch((error) => {
         if (isMounted) {
+          setError(error);
           if (error.message === 'Network Error') {
             toast.error('Error en la conexión con la base de datos.');
-          } 
+          }
         }
       });
 
@@ -69,13 +72,19 @@ const Torneos = () => {
                 </tr>
               ))}
             </>
-          ) : (
+          ) : (<>
             <tr>
-              <td>Test</td>
+              <td></td>
             </tr>
+          </>
           )}
         </tbody>
       </table>
+
+      {torneos.length === 0 ? (
+        <Alert textAlert='I001' typeAlert='info' />
+      ) : ( null )}
+
     </div>
   );
 };
