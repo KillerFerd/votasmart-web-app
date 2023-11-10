@@ -8,6 +8,7 @@ const Alert = ({ textAlert, typeAlert }) => {
     E001: 'Error de conexión con base de datos',
     I001: 'No hay datos disponibles',
     I002: 'No hay torneos vigentes, regrese más tarde',
+    I003: 'Cargando ...'
   }[textAlert] || textAlert;
 
   const backgroundColor = {
@@ -26,7 +27,7 @@ const Alert = ({ textAlert, typeAlert }) => {
 };
 
 Alert.propTypes = {
-  textAlert: PropTypes.oneOf(['E001', 'I001', 'I002']).isRequired,
+  textAlert: PropTypes.oneOf(['E001', 'I001', 'I002', 'I003']).isRequired,
   typeAlert: PropTypes.oneOf(['warning', 'info', 'error']).isRequired,
 };
 

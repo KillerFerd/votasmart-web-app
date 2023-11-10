@@ -9,6 +9,7 @@ const Torneos = () => {
   const [torneos, setTorneos] = useState([]);
   const [solicitudExitosaShown, setSolicitudExitosaShown] = useState(false);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true)
 
   // ComponentDidMount
   useEffect(() => {
@@ -21,6 +22,7 @@ const Torneos = () => {
           if (!solicitudExitosaShown) {
             // toast.success('Solicitud exitosa');
             setSolicitudExitosaShown(true);
+            setLoading(false);
           }
         }
       })
@@ -81,9 +83,10 @@ const Torneos = () => {
         </tbody>
       </table>
 
-      {torneos.length === 0 ? (
-        <Alert textAlert='I001' typeAlert='info' />
-      ) : ( null )}
+      {error ? (<Alert textAlert="E001" typeAlert="error" />) :
+        (loading ? (<Alert textAlert='I003' typeAlert='info' />) :
+          (torneos.length === 0 ? (<Alert textAlert='I001' typeAlert='info' />) :
+            (null)))}
 
     </div>
   );
