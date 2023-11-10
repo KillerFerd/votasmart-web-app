@@ -67,7 +67,7 @@ const Torneos = () => {
                   <td className="border-2 p-2 rounded-base">{torneo.nombre}</td>
                   <td className="border-2 p-2 rounded-base">{torneo.fechaInicio}</td>
                   <td className="border-2 p-2 rounded-base">{torneo.fechaFin}</td>
-                  <td className="border-2 p-2 rounded-base">{torneo.idEstado === 1 ? 'Activo' : 'Inactivo'}</td>
+                  <td className="border-2 p-2 rounded-base">{torneo.estado.descripcion}</td>
                   <td>
                     <img src={info} alt="info" className="w-6 h-auto" />
                   </td>
