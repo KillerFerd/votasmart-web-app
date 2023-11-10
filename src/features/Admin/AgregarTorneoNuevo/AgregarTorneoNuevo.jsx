@@ -75,7 +75,11 @@ const AgregarTorneoNuevo = () => {
           }
         })
         .catch((error) => {
-          if (error.response && error.response.status === 409) {
+          if (error.response &&
+            error.response.status === 400 ||
+            error.response &&
+            error.response.status === 409
+          ) {
             toast.error(error.response.data.message);
           } else if (error.message === 'Network Error') {
             toast.error('Error en la conexión con la base de datos.');
